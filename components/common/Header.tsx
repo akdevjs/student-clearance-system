@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import userAtom from "@/pages/GlobalStates";
-import { stdAtom } from "@/pages/GlobalStates";
+import userAtom from "@/GlobalStates";
+import { stdAtom } from "@/GlobalStates";
 import { useAtom } from "jotai/react";
 import { useRouter } from "next/router";
 

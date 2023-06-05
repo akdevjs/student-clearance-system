@@ -1,7 +1,7 @@
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 import { useEffect } from "react";
-import userAtom from "../GlobalStates";
+import userAtom from "../../GlobalStates";
 import { useAtom } from "jotai";
 import { useRouter } from "next/router";
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FilterIcon, RefreshIcon } from "@heroicons/react/outline";
 import AddLiabilityModal from "./AddLiabilityModal";
-import userAtom from "@/pages/GlobalStates";
+import userAtom from "@/GlobalStates";
 import { useAtom } from "jotai/react";
 import {
   collection,
@@ -200,7 +200,7 @@ const ClearanceRequests = () => {
   useEffect(() => {
     setLoading(true);
     getStudents();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Filter the students based on the selected filter

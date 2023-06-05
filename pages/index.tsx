@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import { animated, useSpring } from "@react-spring/web";
-import userAtom from "./GlobalStates";
-import { stdAtom } from "./GlobalStates";
+import userAtom from "../GlobalStates";
+import { stdAtom } from "../GlobalStates";
 import { useAtom } from "jotai";
 import {
   collection,
@@ -24,7 +24,6 @@ const LoginPage = () => {
   const [user, setUser] = useAtom(userAtom);
   const [std, setStd] = useAtom(stdAtom);
   const router = useRouter();
-  
 
   const formAnimation = useSpring({
     opacity: 1,

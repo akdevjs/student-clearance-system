@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import LiabilityModal from "./LiabilityModal";
-import { stdAtom } from "@/pages/GlobalStates";
+import { stdAtom } from "@/GlobalStates";
 import { useAtom } from "jotai";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import { db } from "@/firebase";
@@ -207,7 +207,7 @@ const RequestStudentClearance = () => {
 
   useEffect(() => {
     getData();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
