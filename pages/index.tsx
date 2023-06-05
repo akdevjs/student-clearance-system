@@ -118,7 +118,7 @@ const LoginPage = () => {
                 type="text"
                 id="username"
                 {...formik.getFieldProps("username")}
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-sm text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
               {formik.touched.username && formik.errors.username && (
                 <p className="text-red-500 text-xs italic">
@@ -137,7 +137,7 @@ const LoginPage = () => {
                 type="password"
                 id="password"
                 {...formik.getFieldProps("password")}
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 text-sm leading-tight focus:outline-none focus:shadow-outline"
               />
               {formik.touched.password && formik.errors.password && (
                 <p className="text-red-500 text-xs italic">
