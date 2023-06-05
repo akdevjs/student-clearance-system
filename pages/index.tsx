@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import { animated, useSpring } from "@react-spring/web";

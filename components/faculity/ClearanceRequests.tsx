@@ -200,6 +200,7 @@ const ClearanceRequests = () => {
   useEffect(() => {
     setLoading(true);
     getStudents();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Filter the students based on the selected filter
